@@ -44,14 +44,14 @@
                                     <h6 class="overline-title text-primary-alt">Menu</h6>
                                 </li>
                                 <li class="nk-menu-item">
-                                    <a href="html/components/misc/icons.html" class="nk-menu-link">
+                                    <a href="#" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-brick-fill"></em></span>
                                         <span class="nk-menu-text">Produksi</span>
                                     </a>
                                 </li>
 
                                 <li class="nk-menu-item">
-                                    <a href="html/index.html" class="nk-menu-link">
+                                    <a href="#" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-archive-fill"></em></span>
                                         <span class="nk-menu-text">Penyimpanan</span>
                                     </a>
@@ -63,21 +63,21 @@
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="html/orders-default.html" class="nk-menu-link"><span
+                                            <a href="#" class="nk-menu-link"><span
                                                     class="nk-menu-text">Order List - Default</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="html/orders-regular.html" class="nk-menu-link"><span
+                                            <a href="#" class="nk-menu-link"><span
                                                     class="nk-menu-text">Order List - Regular</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="html/orders-sales.html" class="nk-menu-link"><span
+                                            <a href="#" class="nk-menu-link"><span
                                                     class="nk-menu-text">Order List - Sales</span></a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nk-menu-item">
-                                    <a href="html/index-sales.html" class="nk-menu-link">
+                                    <a href="#" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em
                                                 class="icon ni ni-activity-round-fill"></em></span>
                                         <span class="nk-menu-text">Sales</span>
@@ -93,17 +93,17 @@
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="html/invoice-list.html" class="nk-menu-link"><span
+                                            <a href="#" class="nk-menu-link"><span
                                                     class="nk-menu-text">Invoice List</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="html/invoice-details.html" class="nk-menu-link"><span
+                                            <a href="#" class="nk-menu-link"><span
                                                     class="nk-menu-text">Invoice Details</span></a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nk-menu-item">
-                                    <a href="html/components/misc/icons.html" class="nk-menu-link">
+                                    <a href="#" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-user-fill"></em></span>
                                         <span class="nk-menu-text">Customer</span>
                                     </a>
@@ -113,7 +113,7 @@
                                 </li>
 
                                 <li class="nk-menu-item">
-                                    <a href="html/components/misc/icons.html" class="nk-menu-link">
+                                    <a href="#" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-user-list-fill"></em></span>
                                         <span class="nk-menu-text">Pegawai</span>
                                     </a>
@@ -124,7 +124,7 @@
                                 </li>
 
                                 <li class="nk-menu-item">
-                                    <a href="html/components/misc/icons.html" class="nk-menu-link">
+                                    <a href="#" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-setting"></em></span>
                                         <span class="nk-menu-text">Pengaturan</span>
                                     </a>
@@ -172,7 +172,7 @@
                                             </div>
                                             <div class="dropdown-body">
                                                 <div class="nk-notification">
-                                                    <div class="nk-notification-item dropdown-inner">
+                                                    {{-- <div class="nk-notification-item dropdown-inner">
                                                         <div class="nk-notification-icon">
                                                             <em
                                                                 class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
@@ -239,6 +239,12 @@
                                                             <div class="nk-notification-text">Your <span>Deposit
                                                                     Order</span> is placed</div>
                                                             <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div> --}}
+
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Tidak ada notifikasi</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -274,13 +280,13 @@
                                             </div>
                                             <div class="dropdown-inner">
                                                 <ul class="link-list">
-                                                    <li><a href="html/user-profile-regular.html"><em
+                                                    <li><a href="#"><em
                                                                 class="icon ni ni-user-alt"></em><span>View
                                                                 Profile</span></a></li>
-                                                    <li><a href="html/user-profile-setting.html"><em
+                                                    <li><a href="#"><em
                                                                 class="icon ni ni-setting-alt"></em><span>Account
                                                                 Setting</span></a></li>
-                                                    <li><a href="html/user-profile-activity.html"><em
+                                                    <li><a href="#"><em
                                                                 class="icon ni ni-activity-alt"></em><span>Login
                                                                 Activity</span></a></li>
                                                     <li><a class="dark-switch" href="#"><em
