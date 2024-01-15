@@ -13,6 +13,17 @@ return new class extends Migration
     {
         Schema::create('manufactures', function (Blueprint $table) {
             $table->id();
+            $table->date('date');
+            $table->unsignedInteger('receiving');
+            $table->unsignedInteger('dispatching');
+            $table->unsignedInteger('total_receiving');
+            $table->unsignedInteger('total_dispatching');
+            $table->unsignedInteger('ending_inventory');
+            $table->unsignedBigInteger('product_id');
+            $table->enum('status',  ['In Stock', 'Out of Stock', 'Pending', 'In Production', 'Shipped', 'Reserved']);
+            $table->timestamps();
+
+            $table->foreign('product_id')->references('id')->on('products');
             $table->timestamps();
         });
     }
