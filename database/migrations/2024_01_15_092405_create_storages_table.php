@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedInteger('receiving');
             $table->unsignedInteger('dispatching');
             $table->unsignedInteger('ending_inventory');
-            $table->enum('status',  ['In Stock', 'Out of Stock', 'Pending', 'In Production', 'Shipped', 'Reserved']);
+            $table->enum('status',  ['In Production', 'Shipped', 'Reserved', 'In Stock', 'Out of Stock', 'Published', 'Draft', 'Pending', ]);
             $table->unsignedBigInteger('manufactures_id');
             $table->foreign('manufactures_id')->references('id')->on('manufactures');
             $table->timestamps();

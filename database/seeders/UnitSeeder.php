@@ -14,6 +14,10 @@ class UnitSeeder extends Seeder
      */
     public function run(): void
     {
+
+        /**
+         * Seeder jenis satuan per unit.
+         */
         $satuanBarang = [
             ['unit_name' => 'Kilogram', 'symbol' => 'kg'],
             ['unit_name' => 'Gram', 'symbol' => 'g'],
@@ -26,7 +30,6 @@ class UnitSeeder extends Seeder
             ['unit_name' => 'Dus', 'symbol' => 'dus'],
             ['unit_name' => 'Lusin', 'symbol' => 'lusin'],
             ['unit_name' => 'Kardus', 'symbol' => 'kardus'],
-            // Tambahkan jenis satuan lainnya sesuai kebutuhan Anda
         ];
 
         foreach ($satuanBarang as $satuan) {
