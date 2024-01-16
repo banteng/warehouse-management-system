@@ -23,7 +23,7 @@ class UnitSeeder extends Seeder
             ['unit_name' => 'Gram', 'symbol' => 'g'],
             ['unit_name' => 'Ton', 'symbol' => 'ton'],
             ['unit_name' => 'Ons', 'symbol' => 'oz'],
-            ['unit_name' => 'Unit', 'symbol' => 'unit'],
+            ['unit_name' => 'Quantity', 'symbol' => 'qty'],
             ['unit_name' => 'Liter', 'symbol' => 'L'],
             ['unit_name' => 'Mililiter', 'symbol' => 'ml'],
             ['unit_name' => 'Buah', 'symbol' => 'buah'],
