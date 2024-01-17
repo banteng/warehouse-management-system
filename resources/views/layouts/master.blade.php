@@ -24,9 +24,13 @@
                 <div class="nk-sidebar-element nk-sidebar-head">
                     <div class="nk-sidebar-brand">
                         <a href="html/index.html" class="logo-link nk-sidebar-logo">
-                            <img class="logo-light logo-img" src="{{ asset('/images/logo/logo.png') }}" srcset="{{ asset('/images/logo/logo2x.png 2x') }}" alt="logo">
-                            <img class="logo-dark logo-img" src="{{ asset('/images/logo/default.png') }}" srcset="{{ asset('/images/logo/default.png 2x') }}" alt="logo-dark">
-                            <img class="logo-small logo-img logo-img-small" src="{{ asset('/images/logo/default.png') }}" srcset="{{ asset('/images/logo/default.png') }}" alt="logo-small">
+                            <img class="logo-light logo-img" src="{{ asset('/images/logo/logo.png') }}"
+                                srcset="{{ asset('/images/logo/logo2x.png 2x') }}" alt="logo">
+                            <img class="logo-dark logo-img" src="{{ asset('/images/logo/default.png') }}"
+                                srcset="{{ asset('/images/logo/default.png 2x') }}" alt="logo-dark">
+                            <img class="logo-small logo-img logo-img-small"
+                                src="{{ asset('/images/logo/default.png') }}"
+                                srcset="{{ asset('/images/logo/default.png') }}" alt="logo-small">
                         </a>
                     </div>
                     <div class="nk-menu-trigger me-n2">
@@ -41,64 +45,71 @@
                         <div class="nk-sidebar-menu" data-simplebar>
                             <ul class="nk-menu">
                                 <li class="nk-menu-heading">
-                                    <h6 class="overline-title text-primary-alt">Menu</h6>
-                                </li>
-                                <li class="nk-menu-item">
-                                    <a href="#" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-brick-fill"></em></span>
-                                        <span class="nk-menu-text">Produksi</span>
-                                    </a>
-                                </li>
-
-                                <li class="nk-menu-item">
-                                    <a href="#" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-archive-fill"></em></span>
-                                        <span class="nk-menu-text">Penyimpanan</span>
-                                    </a>
+                                    <h6 class="overline-title text-primary-alt">Master</h6>
                                 </li>
                                 <li class="nk-menu-item has-sub">
                                     <a href="#" class="nk-menu-link nk-menu-toggle">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-cart-fill"></em></span>
-                                        <span class="nk-menu-text">Orders</span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-brick-fill"></em></span>
+                                        <span class="nk-menu-text">Production</span>
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="#" class="nk-menu-link"><span
-                                                    class="nk-menu-text">Order List - Default</span></a>
+                                            <a href="#" class="nk-menu-link"><span class="nk-menu-text">Raw Material</span></a>
                                         </li>
                                         <li class="nk-menu-item">
                                             <a href="#" class="nk-menu-link"><span
-                                                    class="nk-menu-text">Order List - Regular</span></a>
+                                                    class="nk-menu-text">Production</span></a>
                                         </li>
-                                        <li class="nk-menu-item">
-                                            <a href="#" class="nk-menu-link"><span
-                                                    class="nk-menu-text">Order List - Sales</span></a>
-                                        </li>
+
                                     </ul>
                                 </li>
                                 <li class="nk-menu-item">
                                     <a href="#" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em
-                                                class="icon ni ni-activity-round-fill"></em></span>
-                                        <span class="nk-menu-text">Sales</span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-list-thumb-fill"></em></span>
+                                        <span class="nk-menu-text">Product</span>
                                     </a>
                                 </li>
+                                <li class="nk-menu-item">
+                                    <a href="#" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-archive-fill"></em></span>
+                                        <span class="nk-menu-text">Storage</span>
+                                    </a>
+                                </li>
+                                <li class="nk-menu-item">
+                                    <a href="#" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-user-fill"></em></span>
+                                        <span class="nk-menu-text">Suppliers</span>
+                                    </a>
+                                </li>
+                                
                                 <li class="nk-menu-heading">
                                     <h6 class="overline-title text-primary-alt">Sales</h6>
                                 </li>
                                 <li class="nk-menu-item has-sub">
                                     <a href="#" class="nk-menu-link nk-menu-toggle">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
-                                        <span class="nk-menu-text">Invoice</span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-cart-fill"></em></span>
+                                        <span class="nk-menu-text">Order</span>
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="#" class="nk-menu-link"><span
-                                                    class="nk-menu-text">Invoice List</span></a>
+                                            <a href="#" class="nk-menu-link"><span class="nk-menu-text">Create New Order</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="#" class="nk-menu-link"><span
-                                                    class="nk-menu-text">Invoice Details</span></a>
+                                            <a href="#" class="nk-menu-link"><span class="nk-menu-text">Order List</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-activity-round-fill"></em></span>
+                                        <span class="nk-menu-text">Sales Report</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="#" class="nk-menu-link"><span class="nk-menu-text">Report Monthly</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="#" class="nk-menu-link"><span class="nk-menu-text">Ledger</span></a>
                                         </li>
                                     </ul>
                                 </li>
@@ -109,24 +120,23 @@
                                     </a>
                                 </li>
                                 <li class="nk-menu-heading">
-                                    <h6 class="overline-title text-primary-alt">Kepegawaian</h6>
+                                    <h6 class="overline-title text-primary-alt">Staff</h6>
                                 </li>
-
                                 <li class="nk-menu-item">
                                     <a href="#" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-user-list-fill"></em></span>
-                                        <span class="nk-menu-text">Pegawai</span>
+                                        <span class="nk-menu-text">Staff</span>
                                     </a>
                                 </li>
 
                                 <li class="nk-menu-heading">
-                                    <h6 class="overline-title text-primary-alt">Pengaturan</h6>
+                                    <h6 class="overline-title text-primary-alt">Settings</h6>
                                 </li>
 
                                 <li class="nk-menu-item">
                                     <a href="#" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-setting"></em></span>
-                                        <span class="nk-menu-text">Pengaturan</span>
+                                        <span class="nk-menu-text">Setting</span>
                                     </a>
                                 </li>
                             </ul>
@@ -244,7 +254,8 @@
 
                                                     <div class="nk-notification-item dropdown-inner">
                                                         <div class="nk-notification-content">
-                                                            <div class="nk-notification-text">Tidak ada notifikasi</div>
+                                                            <div class="nk-notification-text">Tidak ada notifikasi
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -322,7 +333,8 @@
                     <div class="nk-footer">
                         <div class="container-fluid">
                             <div class="nk-footer-wrap">
-                                <div class="nk-footer-copyright"> &copy; 2024 Warehouse Management System by <i>Meraki Kreativ</i>.</div>
+                                <div class="nk-footer-copyright"> &copy; 2024 Warehouse Management System by <i>Meraki
+                                        Kreativ</i>.</div>
                             </div>
                         </div>
                     </div>
