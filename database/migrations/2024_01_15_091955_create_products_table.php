@@ -19,6 +19,7 @@ return new class extends Migration
             $table->unsignedInteger('product_stock'); // 50
             $table->date('expired_product'); // 2025-01-01
             $table->unsignedBigInteger('unit_id'); // Dos
+            $table->string('warehouse_rack'); // Dos
             $table->timestamps();
 
             $table->foreign('unit_id')->references('id')->on('units');
