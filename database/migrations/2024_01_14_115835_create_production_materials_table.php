@@ -11,20 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('production_materials', function (Blueprint $table) {
+        Schema::create('productions', function (Blueprint $table) {
             $table->id();
-            $table->date('production_start'); // 2024-01-01
-            $table->unsignedInteger('raw_material_quantity'); // 50
-            $table->decimal('raw_material_unit_price', 10, 0); // 10.000
-            $table->decimal('total_raw_material_unit_price', 10, 0); // 500.000 
-            $table->unsignedBigInteger('raw_material_code'); // BMT-001
+            $table->string('raw_material_code'); // Karton
+            $table->unsignedInteger('raw_material_stock'); // 50
             $table->unsignedBigInteger('raw_material_unit'); // Pcs
             
-            $table->enum('status',  ['Unpaid', 'Paid'])->default('Unpaid'); // Unpaid
             $table->timestamps();
 
             $table->foreign('unit_id')->references('id')->on('units');
             $table->foreign('raw_material_code')->references('raw_material_code')->on('raw_materials');
+            $table->timestamps();
         });
     }
 
@@ -33,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('purchases');
+        Schema::dropIfExists('productions');
     }
 };
