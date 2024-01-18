@@ -13,15 +13,13 @@ return new class extends Migration
     {
         Schema::create('production_materials', function (Blueprint $table) {
             $table->id();
-            $table->string('raw_material_code'); // Karton
+            $table->unsignedBigInteger('raw_material_code'); // Karton
             $table->unsignedInteger('raw_material_stock'); // 50
             $table->unsignedBigInteger('raw_material_unit'); // Pcs
+            $table->timestamps();
             
-            $table->timestamps();
-
-            $table->foreign('unit_id')->references('id')->on('units');
-            $table->foreign('raw_material_code')->references('raw_material_code')->on('raw_materials');
-            $table->timestamps();
+            $table->foreign('raw_material_unit')->references('id')->on('units');
+            $table->foreign('raw_material_code')->references('id')->on('raw_materials');
         });
     }
 

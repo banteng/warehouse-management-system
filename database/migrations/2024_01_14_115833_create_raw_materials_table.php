@@ -15,17 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('raw_material_code')->unique(); // BMT-001
             $table->string('raw_material_name')->length(100); // Karton
-            $table->decimal('raw_material_unit_price', 10, 0); //10.000
+            $table->decimal('raw_material_unit_price', 10, 2); //10.000
             $table->unsignedInteger('raw_material_stock'); // 50
-            $table->unsignedBigInteger('raw_material_unit'); // Pcs
-            $table->unsignedBigInteger('supplier_id'); // SUP-001
-            
-            $table->enum('status',  ['Shipped', 'Reserved', 'In Production']); // In Production
+            $table->unsignedBigInteger('unit_id'); // Pcs
+            $table->unsignedBigInteger('supplier_code'); // SUP-001
+            $table->enum('status',  ['Shipping', 'Shipped', 'Reserved', 'In Production']); // In Production
             $table->timestamps();
 
             $table->foreign('unit_id')->references('id')->on('units');
-            $table->foreign('supplier_id')->references('supplier_code')->on('suppliers');
-            $table->timestamps();
+            $table->foreign('supplier_code')->references('id')->on('suppliers');
         });
     }
 
