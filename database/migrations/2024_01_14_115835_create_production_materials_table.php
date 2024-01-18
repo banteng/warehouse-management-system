@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('productions', function (Blueprint $table) {
+        Schema::create('production_materials', function (Blueprint $table) {
             $table->id();
             $table->string('raw_material_code'); // Karton
             $table->unsignedInteger('raw_material_stock'); // 50
